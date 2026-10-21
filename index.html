@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#f6f5f1" />
+  <meta name="description" content="Iris Choy — Software Engineering student at the University of Waterloo building thoughtful software across backend systems, AI, and interactive experiences." />
+  <title>Iris Choy — Software Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <a class="wordmark" href="#home" aria-label="Iris Choy home">IC<span>.</span></a>
+    <nav aria-label="Main navigation">
+      <a href="#work">Work</a><a href="#projects">Projects</a><a href="#about">About</a>
+    </nav>
+    <a class="nav-contact" href="mailto:ichoy@uwaterloo.ca">Say hello <span>↗</span></a>
+  </header>
+
+  <main>
+    <section class="hero section-wrap" id="home">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="status-dot"></span> SOFTWARE ENGINEERING · WATERLOO, ON</p>
+        <h1>Building things<br>that <em>make a difference.</em></h1>
+        <p class="hero-intro">I'm Iris, a Software Engineering student at the University of Waterloo. I like working across backend systems, AI, and products that solve real problems.</p>
+        <div class="hero-actions"><a class="button button-dark" href="#projects">Explore my work <span>↓</span></a><a class="text-link" href="https://www.linkedin.com/in/iris-choy/" target="_blank" rel="noreferrer">LinkedIn ↗</a></div>
+      </div>
+      <div class="hero-art" aria-label="Abstract illustration of connected software systems" role="img">
+        <div class="art-orbit orbit-one"></div><div class="art-orbit orbit-two"></div><div class="art-orbit orbit-three"></div>
+        <div class="art-center"><span>IC</span><small>ideas → impact</small></div>
+        <span class="art-node node-a">systems</span><span class="art-node node-b">AI</span><span class="art-node node-c">people</span><span class="art-node node-d">software</span>
+        <span class="art-cross cross-a">✳</span><span class="art-cross cross-b">✳</span>
+      </div>
+      <div class="hero-foot"><span>SCROLL TO EXPLORE</span><span>01 — 04</span></div>
+    </section>
+
+    <section class="work section-wrap" id="work">
+      <div class="section-heading"><div><p class="eyebrow">01 / EXPERIENCE</p><h2>Where I've been<br><em>building.</em></h2></div><p class="section-note">A few places where I've turned technical problems into useful software.</p></div>
+      <div class="experience-list">
+        <article class="experience-item">
+          <div class="exp-meta"><span>May — Aug 2026</span><span>Waterloo, ON</span></div>
+          <div class="exp-main"><div class="exp-title"><h3>Carta</h3><span class="tag">IAM · Backend</span></div><p class="role">Software Engineering Intern · Identity & Access Management</p><ul><li>Led OAuth 2.0 scope enforcement across 12 scopes, 160+ IAM methods, and six microservices, switching from warn-only to enforcement in a single cutover with zero outages.</li><li>Built a reusable gRPC scope-enforcement layer and supported implementation, testing, and rollout with Claude agents and reusable skills.</li><li>Fixed a latent credential issue affecting ~77 service clients without changing call sites, and migrated password reset to a dedicated authentication service.</li></ul><div class="chips"><span>Python</span><span>gRPC</span><span>OAuth 2.0</span><span>Microservices</span></div></div>
+        </article>
+        <article class="experience-item">
+          <div class="exp-meta"><span>Sep — Dec 2025</span><span>Waterloo, ON</span></div>
+          <div class="exp-main"><div class="exp-title"><h3>Carta</h3><span class="tag">Investor Reporting</span></div><p class="role">Software Engineering Intern · Investor Reporting</p><ul><li>Built an end-to-end audit-confirmation workflow using Django, REST APIs, OpenAPI contracts, React forms, and auditor PDFs.</li><li>Replaced a manual transfer process, cutting auditor turnaround from 4–5 business days to 1–2.</li><li>Enabled 100+ LLC companies to use the investor reporting platform by introducing polymorphic entity routing across APIs and a downstream service.</li></ul><div class="chips"><span>Django</span><span>React</span><span>REST APIs</span><span>OpenAPI</span></div></div>
+        </article>
+        <article class="experience-item">
+          <div class="exp-meta"><span>Sep — Dec 2024</span><span>Toronto, ON</span></div>
+          <div class="exp-main"><div class="exp-title"><h3>Ontario Health</h3><span class="tag">AI · Cloud</span></div><p class="role">Cloud Application Developer</p><ul><li>Built an LLM-powered healthcare chatbot on AWS using OpenAI APIs to help healthcare workers review patient records, reducing estimated review time by 65%.</li><li>Developed an OpenAI API-based hospital wait-time forecasting model and evaluated predictions against 250 datasets.</li></ul><div class="chips"><span>AWS</span><span>OpenAI API</span><span>LLMs</span><span>Cloud</span></div></div>
+        </article>
+        <article class="experience-item">
+          <div class="exp-meta"><span>Jan — Apr 2024</span><span>Guelph, ON</span></div>
+          <div class="exp-main"><div class="exp-title"><h3>Canadian Solar</h3><span class="tag">Web · Data</span></div><p class="role">Software Developer</p><ul><li>Built an Angular/TypeScript reporting and visualization web app on AWS for global monitoring workflows.</li><li>Improved the monitoring platform based on user feedback, contributing to 21% fewer service tickets.</li></ul><div class="chips"><span>Angular</span><span>TypeScript</span><span>AWS</span></div></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="projects section-wrap" id="projects">
+      <div class="section-heading"><div><p class="eyebrow">02 / SELECTED PROJECTS</p><h2>Curiosity, built<br><em>into something.</em></h2></div><p class="section-note">From assistive AR to sensor-driven games, I enjoy bringing software and the physical world together.</p></div>
+      <div class="project-grid">
+        <article class="project-card project-speakeasy"><div class="project-visual visual-speakeasy"><div class="phone-frame"><div class="phone-top"></div><div class="vision-box"><span>VISION</span><i></i><i></i><i></i></div><div class="sound-wave"><b></b><b></b><b></b><b></b><b></b><b></b><b></b><b></b><b></b></div><div class="phone-caption">A little more independence.</div></div><span class="visual-label">HACK THE NORTH 2025</span></div><div class="project-content"><div class="project-kicker"><span>01</span><span>AI · ACCESSIBILITY · AR</span></div><h3>SpeakEasy</h3><p class="project-subtitle">LLM-powered AR communication assistant</p><p>An assistive communication experience built for Snap Spectacles, combining Gemini Vision with Groq inference and on-device text-to-speech.</p><div class="project-results"><div><strong>40%</strong><span>less navigation time</span></div><div><strong>~3×</strong><span>faster response latency</span></div></div><div class="chips"><span>TypeScript</span><span>Snap Spectacles</span><span>Gemini Vision</span><span>Groq</span></div><p class="project-note">Hack the North 2025 · Groq Sponsor Prize</p></div></article>
+        <article class="project-card project-horror"><div class="project-visual visual-horror"><div class="game-scene"><div class="moon"></div><div class="tree tree-one"></div><div class="tree tree-two"></div><div class="scene-ground"></div><div class="flashlight-cone"></div><div class="scene-ui">SIGNAL FOUND <span>•••</span></div></div><span class="visual-label">HARDWARE × GAMEPLAY</span></div><div class="project-content"><div class="project-kicker"><span>02</span><span>UNITY · COMPUTER VISION · IOT</span></div><h3>AR Horror Game</h3><p class="project-subtitle">Sensor-driven flashlight controller</p><p>A physical controller built with a Raspberry Pi, I²C sensors, an IR camera, and an accelerometer drives a Unity 3D platformer in real time.</p><div class="chips"><span>C#</span><span>Unity</span><span>Python</span><span>OpenCV</span><span>TCP/IP</span></div></div></article>
+      </div>
+      <div class="more-projects"><div><span class="mini-index">03</span><div><h3>More from my experience</h3><p>Healthcare AI · Cloud reporting · Audit workflows · Entity routing</p></div></div><a href="#work" class="round-arrow" aria-label="See experience">↗</a></div>
+    </section>
+
+    <section class="about section-wrap" id="about">
+      <div class="section-heading"><div><p class="eyebrow">03 / A LITTLE ABOUT ME</p><h2>Engineer by study.<br><em>Builder by nature.</em></h2></div></div>
+      <div class="about-layout"><div class="about-copy"><p>I'm studying Software Engineering at the University of Waterloo, graduating in April 2028. I'm interested in the intersection of thoughtful product engineering, backend systems, and applied AI.</p><p>I like projects that make me cross boundaries: connecting APIs and services, making AI useful in real workflows, or turning a physical controller into an interactive game.</p><a class="text-link" href="mailto:ichoy@uwaterloo.ca">Let's connect ↗</a></div><div class="toolbox"><p class="eyebrow">MY TOOLBOX</p><div class="tool-group"><h4>Languages</h4><p>Python · C++ · C# · TypeScript · Go · SQL · JavaScript · Java</p></div><div class="tool-group"><h4>Frameworks & tools</h4><p>React · Angular · Django · ASP.NET · gRPC · OpenCV · Unity · Docker · Kubernetes</p></div><div class="tool-group"><h4>Cloud, data & concepts</h4><p>AWS · PostgreSQL · Kafka · REST APIs · TCP/IP · I²C sensors · LLM APIs · Automated testing</p></div><div class="tool-group"><h4>AI-assisted development</h4><p>Claude Code · GitHub Copilot · Cursor · OpenAI Codex</p></div></div></div>
+    </section>
+    <section class="contact section-wrap"><p class="eyebrow">04 / NEXT UP</p><h2>Have something<br><em>good to build?</em></h2><a class="button button-light" href="mailto:ichoy@uwaterloo.ca">Get in touch <span>↗</span></a><p class="contact-small">University of Waterloo · Software Engineering · Class of 2028</p></section>
+  </main>
+  <footer class="footer section-wrap"><a class="wordmark" href="#home">IC<span>.</span></a><span>Designed and built with care.</span><div><a href="https://www.linkedin.com/in/iris-choy/" target="_blank" rel="noreferrer">LinkedIn ↗</a><a href="mailto:ichoy@uwaterloo.ca">Email ↗</a></div><span>© <span id="year">2026</span> Iris Choy</span></footer>
+  <script src="script.js"></script>
+</body>
+</html>
