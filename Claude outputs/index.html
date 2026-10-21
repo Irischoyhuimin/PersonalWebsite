@@ -1,0 +1,311 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#07060b" />
+  <meta name="description" content="Iris Choy — Software Engineering student at the University of Waterloo building backend systems, applied AI, and interactive products." />
+  <title>Iris Choy — Software Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="grid-bg" aria-hidden="true"></div>
+  <div class="glow glow-a" aria-hidden="true"></div>
+  <div class="glow glow-b" aria-hidden="true"></div>
+
+  <header class="topbar">
+    <a class="wordmark" href="#home" aria-label="Iris Choy home">iris<span>.dev</span></a>
+    <nav aria-label="Main navigation">
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero wrap" id="home">
+      <div class="hero-copy">
+        <p class="kicker"><span class="dot"></span> software engineering @ uwaterloo</p>
+        <h1>Hi, I'm <span class="neon">Iris</span>.<br>I build systems<br>that <span class="outline">ship.</span></h1>
+        <p class="lead">Software Engineering student at the University of Waterloo. I've rolled out auth across production microservices at Carta, shipped LLM tools in healthcare, and won hackathon prizes building AR and robotics.</p>
+        <div class="cta">
+          <a class="btn btn-pink" href="#projects">See my work <span>→</span></a>
+          <a class="btn btn-ghost" href="https://www.linkedin.com/in/iris-choy/" target="_blank" rel="noreferrer">LinkedIn ↗</a>
+          <a class="btn btn-ghost" href="mailto:ichoy@uwaterloo.ca">Email ↗</a>
+        </div>
+        <ul class="stats">
+          <li><b>465K+</b><span>auth checks / month guarded</span></li>
+          <li><b>2×</b><span>Hack the North prizes</span></li>
+          <li><b>5</b><span>co-op terms</span></li>
+        </ul>
+      </div>
+
+      <div class="hero-art">
+        <button class="coder" id="coder" type="button" aria-label="Cartoon of Iris coding — click to make her wave">
+          <svg viewBox="0 0 320 340" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true">
+            <defs>
+              <linearGradient id="screenGlow" x1="0" x2="0" y1="0" y2="1">
+                <stop offset="0" stop-color="#ff4fd8" stop-opacity=".55"/>
+                <stop offset="1" stop-color="#ff4fd8" stop-opacity="0"/>
+              </linearGradient>
+            </defs>
+            <!-- desk glow -->
+            <ellipse cx="160" cy="318" rx="130" ry="14" fill="#ff4fd8" opacity=".18"/>
+            <!-- hair back -->
+            <path d="M88 120 C80 60 120 30 160 30 C205 30 242 60 232 125 L238 205 C222 214 98 214 82 205 Z" fill="#1b1022"/>
+            <!-- bun -->
+            <circle cx="160" cy="30" r="24" fill="#1b1022"/>
+            <circle cx="160" cy="30" r="24" fill="none" stroke="#ff4fd8" stroke-width="3" stroke-dasharray="6 8" class="spin"/>
+            <!-- neck -->
+            <rect x="146" y="168" width="28" height="26" rx="8" fill="#f2c7b0"/>
+            <!-- body hoodie -->
+            <path d="M92 270 C92 214 120 190 160 190 C200 190 228 214 228 270 Z" fill="#2a1534"/>
+            <path d="M138 192 L160 222 L182 192" fill="none" stroke="#ff4fd8" stroke-width="3"/>
+            <!-- waving arm (right side of image) -->
+            <g class="arm" id="arm">
+              <path d="M214 222 C238 206 246 178 240 150" stroke="#2a1534" stroke-width="22" stroke-linecap="round" fill="none"/>
+              <circle cx="240" cy="140" r="13" fill="#f2c7b0"/>
+            </g>
+            <!-- face -->
+            <ellipse cx="160" cy="118" rx="54" ry="58" fill="#f6d2bd"/>
+            <!-- bangs -->
+            <path d="M104 108 C108 70 140 58 162 62 C188 64 214 80 216 110 C196 92 176 86 160 92 C142 84 120 92 104 108 Z" fill="#1b1022"/>
+            <!-- headphones -->
+            <path d="M100 116 C100 62 220 62 220 116" fill="none" stroke="#ff4fd8" stroke-width="7" stroke-linecap="round"/>
+            <rect x="90" y="106" width="18" height="32" rx="8" fill="#ff4fd8"/>
+            <rect x="212" y="106" width="18" height="32" rx="8" fill="#ff4fd8"/>
+            <!-- eyes -->
+            <g class="eye" data-cx="140" data-cy="122">
+              <ellipse cx="140" cy="122" rx="11" ry="12" fill="#fff"/>
+              <circle class="pupil" cx="140" cy="122" r="6" fill="#1b1022"/>
+              <circle class="shine" cx="142" cy="119" r="2" fill="#fff"/>
+              <rect class="lid" x="127" y="108" width="26" height="28" rx="12" fill="#f6d2bd"/>
+            </g>
+            <g class="eye" data-cx="180" data-cy="122">
+              <ellipse cx="180" cy="122" rx="11" ry="12" fill="#fff"/>
+              <circle class="pupil" cx="180" cy="122" r="6" fill="#1b1022"/>
+              <circle class="shine" cx="182" cy="119" r="2" fill="#fff"/>
+              <rect class="lid" x="167" y="108" width="26" height="28" rx="12" fill="#f6d2bd"/>
+            </g>
+            <!-- glasses -->
+            <g fill="none" stroke="#ff4fd8" stroke-width="2.5" opacity=".9">
+              <rect x="124" y="107" width="32" height="30" rx="10"/>
+              <rect x="164" y="107" width="32" height="30" rx="10"/>
+              <path d="M156 120 L164 120"/>
+            </g>
+            <!-- blush + mouth -->
+            <ellipse cx="126" cy="146" rx="9" ry="5" fill="#ff7ab8" opacity=".45"/>
+            <ellipse cx="194" cy="146" rx="9" ry="5" fill="#ff7ab8" opacity=".45"/>
+            <path class="mouth" d="M150 150 Q160 160 170 150" stroke="#8a2f55" stroke-width="3" fill="none" stroke-linecap="round"/>
+            <!-- laptop -->
+            <path d="M70 252 L250 252 L262 300 L58 300 Z" fill="#14101c" stroke="#ff4fd8" stroke-width="2"/>
+            <rect x="58" y="298" width="204" height="10" rx="4" fill="#ff4fd8"/>
+            <path d="M70 252 L250 252 L262 300 L58 300 Z" fill="url(#screenGlow)" opacity=".5"/>
+            <text x="160" y="283" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="13" fill="#ffd6f6" class="typing">&lt;/&gt; shipping…</text>
+            <!-- left hand on laptop -->
+            <circle cx="104" cy="256" r="12" fill="#f2c7b0"/>
+          </svg>
+          <span class="bubble" id="bubble">hi! 👋 click me</span>
+        </button>
+        <div class="chip chip-a">gRPC</div>
+        <div class="chip chip-b">LLMs</div>
+        <div class="chip chip-c">OAuth 2.0</div>
+        <div class="chip chip-d">React</div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section class="wrap section" id="experience">
+      <div class="sec-head">
+        <p class="num">01</p>
+        <h2>Experience</h2>
+        <p class="sub">// where I've been building</p>
+      </div>
+
+      <div class="timeline">
+        <article class="job">
+          <div class="when"><span>May – Aug 2026</span><span>Waterloo, ON</span></div>
+          <div class="what">
+            <h3>Carta <em>Software Engineering Intern · Identity &amp; Access Management</em></h3>
+            <ul>
+              <li>Led OAuth 2.0 scope enforcement across 12 scopes, 160+ IAM methods and six Kubernetes-deployed microservices, moving from warn-only to enforcing in one cutover with zero outages; now guards 465,000+ authorization checks a month.</li>
+              <li>Built a reusable gRPC scope-enforcement layer that made new scopes configuration-driven; used Claude agents and reusable skills for implementation, testing and rollout.</li>
+              <li>Diagnosed a failure mode where ~77 credential-less service clients would fail every scope-guarded write, and fixed it with zero call-site changes by defaulting to a shared OAuth application.</li>
+              <li>Migrated the password-reset flow (~2,350 resets/month) from a Django monolith to a dedicated auth service behind a feature flag; added session revocation and retired the legacy path.</li>
+            </ul>
+            <div class="tags"><span>Python</span><span>gRPC</span><span>OAuth 2.0</span><span>Kubernetes</span><span>Django</span><span>Kafka</span></div>
+          </div>
+        </article>
+
+        <article class="job">
+          <div class="when"><span>Sep – Dec 2025</span><span>Waterloo, ON</span></div>
+          <div class="what">
+            <h3>Carta <em>Software Engineering Intern · Investor Reporting</em></h3>
+            <ul>
+              <li>Built audit-confirmation workflows end to end (Django, REST APIs, OpenAPI, React, Docker, auditor PDF), cutting auditor turnaround from 4–5 business days to 1–2.</li>
+              <li>Enabled 100+ LLC companies to use the investor reporting platform for the first time by replacing integer-ID routing with a polymorphic entity scheme across APIs, serializers and a downstream service, in 19 feature-flagged PRs.</li>
+              <li>Shipped 34 PRs with zero reverts; fixed 11 production bugs via Sentry and Datadog with regression tests.</li>
+            </ul>
+            <div class="tags"><span>Django</span><span>React</span><span>GraphQL</span><span>OpenAPI</span><span>Docker</span><span>Sentry</span></div>
+          </div>
+        </article>
+
+        <article class="job">
+          <div class="when"><span>Sep – Dec 2024</span><span>Toronto, ON</span></div>
+          <div class="what">
+            <h3>Ontario Health <em>Cloud Application Developer</em></h3>
+            <ul>
+              <li>Built an LLM-powered healthcare chatbot with OpenAI APIs, React, Tailwind and ASP.NET MVC on AWS that summarizes patient records for clinicians, with an estimated 65% cut in review time.</li>
+              <li>Developed an OpenAI API-based hospital wait-time forecasting model and evaluated it across 250 datasets against recorded wait times, within a −20% / +30% error tolerance.</li>
+            </ul>
+            <div class="tags"><span>OpenAI</span><span>AWS</span><span>React</span><span>Tailwind</span><span>ASP.NET</span></div>
+          </div>
+        </article>
+
+        <article class="job">
+          <div class="when"><span>Jan – Apr 2024</span><span>Guelph, ON</span></div>
+          <div class="what">
+            <h3>Canadian Solar <em>Software Developer</em></h3>
+            <ul>
+              <li>Built an Angular/TypeScript data reporting and visualization web app on AWS for global monitoring workflows.</li>
+              <li>Improved the monitoring platform from user feedback, cutting service tickets by 21%.</li>
+            </ul>
+            <div class="tags"><span>Angular</span><span>TypeScript</span><span>AWS</span></div>
+          </div>
+        </article>
+
+        <article class="job">
+          <div class="when"><span>May – Sep 2023</span><span>North York, ON</span></div>
+          <div class="what">
+            <h3>SparkLease <em>Full Stack Developer</em></h3>
+            <ul>
+              <li>Built web, mobile and WeChat Mini Program apps with ASP.NET MVC and REST APIs.</li>
+              <li>Cut page load times by 30% through code optimization and ASP.NET caching.</li>
+              <li>Raised average session duration by 22% with personalized recommendations, using GraphQL to query user profile data.</li>
+            </ul>
+            <div class="tags"><span>ASP.NET</span><span>GraphQL</span><span>WeChat</span></div>
+          </div>
+        </article>
+
+        <article class="job compact">
+          <div class="when"><span>Earlier</span></div>
+          <div class="what">
+            <h3>Genesis Network <em>Developer</em></h3>
+            <p>Built a React Native social app with Flask APIs, messaging and meetup maps.</p>
+            <h3 class="mt">Google Developer Student Club <em>Developer</em></h3>
+            <p>Built a React website with a Flask backend, MariaDB and MongoDB.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="wrap section" id="projects">
+      <div class="sec-head">
+        <p class="num">02</p>
+        <h2>Projects</h2>
+        <p class="sub">// hackathons, hardware &amp; side quests</p>
+      </div>
+
+      <div class="cards">
+        <article class="card feature">
+          <div class="badge">🏆 Hack the North 2026 · Best Use of BracketBot Hardware</div>
+          <h3>PrintDnD</h3>
+          <p>A two-armed mobile robot that autonomously clears 3D-printer beds, so prints can keep running while you're on Do Not Disturb. Fine-tuned a PI0.5 vision-language-action model on 100+ teleoperated episodes (Meta Quest 3S) and added wake-word voice commands.</p>
+          <p class="challenge"><b>Challenge:</b> 75% of training recordings were vanishing — traced it to a capped on-robot upload buffer that overwrote files while offline.</p>
+          <div class="tags"><span>VLA models</span><span>Robotics</span><span>7-DOF</span><span>Voice</span></div>
+          <a class="link" href="https://devpost.com/software/printdnd" target="_blank" rel="noreferrer">Devpost ↗</a>
+        </article>
+
+        <article class="card feature">
+          <div class="badge">🏆 Hack the North 2025 · Groq Sponsor Prize</div>
+          <h3>SpeakEasy</h3>
+          <p>An LLM-powered AR communication aid on Snap Spectacles for people with speech impairments, using Gemini Vision and Groq. Its keyboard and prompt selector cut navigation time by about 40%.</p>
+          <p class="challenge"><b>Challenge:</b> responses were too slow to feel conversational — cut latency about 3× vs. the Gemini baseline with Groq LPU inference and on-device text-to-speech.</p>
+          <div class="tags"><span>TypeScript</span><span>Lens Studio</span><span>Gemini Vision</span><span>Groq</span></div>
+        </article>
+
+        <article class="card">
+          <h3>This4That</h3>
+          <p>A cross-platform marketplace where university students trade services without money. Supabase/PostgreSQL messaging with searchable chats, unread indicators and paginated history, plus a migration that merges duplicate chats with access-control tests.</p>
+          <div class="tags"><span>React Native</span><span>TypeScript</span><span>Supabase</span><span>PostgreSQL</span></div>
+        </article>
+
+        <article class="card">
+          <h3>CxC Drug Binding Prediction</h3>
+          <p>A GPU-accelerated XGBoost classifier for protein binding sites on a 497K-row, 86-feature dataset, handling a 28:1 class imbalance with SMOTE (Cyclica Challenge).</p>
+          <div class="tags"><span>Python</span><span>Pandas</span><span>scikit-learn</span><span>XGBoost</span></div>
+        </article>
+
+        <article class="card">
+          <h3>AR Horror Game</h3>
+          <p>A sensor-driven flashlight controller: Raspberry Pi with I2C sensors, an IR camera and an accelerometer, processed with OpenCV and streamed over TCP/IP into a Unity AR platformer.</p>
+          <div class="tags"><span>Raspberry Pi</span><span>I2C</span><span>OpenCV</span><span>Unity</span><span>C#</span></div>
+        </article>
+
+        <article class="card">
+          <h3>Autonomous Vehicle</h3>
+          <p>A Raspberry Pi self-driving cart with a camera that follows lanes and stops for signs and traffic lights, with color-based path switching in OpenCV.</p>
+          <div class="tags"><span>Python</span><span>C++</span><span>OpenCV</span></div>
+        </article>
+
+        <article class="card">
+          <h3>GRT RouteMate</h3>
+          <p>A transit app for Kitchener–Waterloo riders with Grand River Transit schedules, backed by PostgreSQL managing 2,500+ stops and routes.</p>
+          <div class="tags"><span>React Native</span><span>.NET</span><span>PostgreSQL</span></div>
+        </article>
+
+        <article class="card">
+          <h3>SnakeAI</h3>
+          <p>A React snake game driven by search algorithms, with visualizations of how the AI explores the board.</p>
+          <div class="tags"><span>React</span><span>Algorithms</span></div>
+        </article>
+
+        <article class="card">
+          <h3>Enhanced Task Manager</h3>
+          <p>A C++ task manager with file persistence.</p>
+          <div class="tags"><span>C++</span></div>
+        </article>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="wrap section" id="skills">
+      <div class="sec-head">
+        <p class="num">03</p>
+        <h2>Toolkit</h2>
+        <p class="sub">// what I reach for</p>
+      </div>
+      <div class="skills">
+        <div><h4>Languages</h4><p>Python · TypeScript · JavaScript · Go · SQL · C++ · C# · Java</p></div>
+        <div><h4>Frameworks</h4><p>React · React Native · Django · Node.js · ASP.NET · Angular · Tailwind · Prisma</p></div>
+        <div><h4>Infra &amp; Data</h4><p>AWS · Docker · Kubernetes · gRPC · Kafka · PostgreSQL · Supabase · GraphQL</p></div>
+        <div><h4>AI &amp; Hardware</h4><p>OpenAI · Gemini · XGBoost · OpenCV · Raspberry Pi · I2C · Unity</p></div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="wrap section contact" id="contact">
+      <p class="num">04</p>
+      <h2>Let's build something <span class="neon">cool.</span></h2>
+      <p class="lead">Open to co-op roles in backend, full-stack and applied AI.</p>
+      <div class="cta center">
+        <a class="btn btn-pink" href="mailto:ichoy@uwaterloo.ca">ichoy@uwaterloo.ca ↗</a>
+        <a class="btn btn-ghost" href="https://www.linkedin.com/in/iris-choy/" target="_blank" rel="noreferrer">LinkedIn ↗</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="wrap footer">
+    <span>© <span id="year"></span> Iris Choy</span>
+    <span class="mono">built with html, css &amp; a lot of pink</span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
